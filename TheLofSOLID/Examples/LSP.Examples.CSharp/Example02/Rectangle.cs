@@ -1,4 +1,4 @@
-namespace Tests
+namespace Example02
 {
     public class Rectangle : IShape
     {

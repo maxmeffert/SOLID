@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using System.Collections;
 
-namespace Tests
+namespace Example02
 {
 
     public class Tests
