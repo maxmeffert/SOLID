@@ -4,6 +4,6 @@ namespace Example02
     {
         public virtual uint Width { get; set; }
         public virtual uint Height { get; set; }
-        public override uint Area => Width * Height;
+        public uint Area => Width * Height;
     }
 }
