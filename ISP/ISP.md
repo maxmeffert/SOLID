@@ -2,91 +2,95 @@
 marp: true
 theme: minimal
 paginate: true
-header: 'Header'
-footer: 'Footer'
+header: 'SOLID: Interface Segregation Principle'
+footer: 'Maximilian Meffert (c) 2020'
 ---
 
-# Some Crazy Tile of Your Presentation
-## Some longer or shorter subtitle of your presentation
-
----
-
-### h3
-normal text
-#### h4
-normal text
-##### h5
-normal text
-###### h6
-normal text
+# SOLID
+## Interface Segregation Principle (ISP)
 
 ---
 
-### Some Itemization
+### Interface Segregation Principle
 
-* item 1
-  * item 2
-    * item 3
-      * item 4
-        * item 5
+![bg right:40% 80%](./ASDPPP-Book-Cover.jpg)
 
----
+> **_"Clients should not be forced to depend upon interfaces that they do not use."_** [Robert C. Martin]
 
-### Some Enumeration
-
-1. item 1
-   1. item 2
-      1. item 3
-         1. item 4
-            1. item 5
+##### Why?
+* Increase of Maintainability
+* Decrease of Rgidity
 
 ---
 
-### Some Link
+### Example: "Loose White-Labeling"
 
-[Link](https://google.com) 
+#### Scenario:
 
----
+1. A service is provided as separate assembly
 
-### Some Image
+2. The service is used by more than 1 WLP implementation
 
-![width:500px](./image.png) 
+3. One WLP requests an individual change
 
----
+4. All other WLPs are forced to adapt
 
-### Some Blockquotes
-
-> blockquote 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus cursus arcu rutrum, quis pharetra dolor luctus. Ut tincidunt tincidunt nisi. Nulla rhoncus urna nec tempus auctor. Duis ac lectus condimentum, iaculis nulla et, euismod augue. Nullam sed turpis fermentum, finibus quam at, aliquet erat. Nam hendrerit leo eu urna dapibus cursus. Maecenas ac maximus leo. Donec pulvinar dolor vel ligula volutpat pretium. Cras euismod nec nunc ut consectetur. Mauris tincidunt tristique tellus, non viverra ipsum hendrerit a.
-
-> blockquote 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus cursus arcu rutrum, quis pharetra dolor luctus. Ut tincidunt tincidunt nisi. Nulla rhoncus urna nec tempus auctor. Duis ac lectus condimentum, iaculis nulla et, euismod augue. Nullam sed turpis fermentum, finibus quam at, aliquet erat. Nam hendrerit leo eu urna dapibus cursus. Maecenas ac maximus leo. Donec pulvinar dolor vel ligula volutpat pretium. Cras euismod nec nunc ut consectetur. Mauris tincidunt tristique tellus, non viverra ipsum hendrerit a.
+WLP = White-Label Partner
 
 ---
 
-### Some Table
+### Example: "Loose White-Labeling"
 
-| Col 1 | Col 2 | Col 3 | Col 4 |
-|:-----:|:-----:|:-----:|:-----:|
-| Col 1 | Col 2 | Col 3 | Col 4 |
-| Col 1 | Col 2 | Col 3 | Col 4 |
-| Col 1 | Col 2 | Col 3 | Col 4 |
-| Col 1 | Col 2 | Col 3 | Col 4 |
+#### Before:
 
----
-### Some Inline Code
-`Inline code` with backticks 
+![width:1000px height:360px](./LooseWLP-Before.svg)
 
 ---
 
-### Some Code Block
+### Example: "Loose White-Labeling"
 
-```c#
-using System;
+#### After:
 
-class HelloWorld 
-{
-    public void Main(string[] args) 
-    {
-        Console.WriteLine("Hello World")
-    }
-}
-```
+![width:1000px height:360px](./LooseWLP-After.svg)
+
+---
+
+### Example: "Loose White-Labeling"
+
+#### Possible Risks:
+
+1. Exposure of information to other WLP implementations
+
+2. Unnecessary re-deployment for all WLP implementations
+
+3. Breaking behavior for other WLP implementations
+
+WLP = White-Label Partner
+
+---
+
+### Example: "Loose White-Labeling"
+
+#### Solution:
+
+> **_"Clients should not be forced to depend upon interfaces that they do not use."_** [Robert C. Martin]
+
+1. Introduce separate interfaces for each WLP
+
+2. WLP implementations only use individual interfaces
+
+3. Implement all interfaces on the used service
+
+WLP = White-Label Partner
+
+---
+
+### Example: "Loose White-Labeling"
+
+#### Solution:
+
+![width:1000px height:360px](./LooseWLP-Solution.svg)
+
+---
+
+# Thanks!
