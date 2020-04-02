@@ -19,7 +19,7 @@ footer: 'Maximilian Meffert (c) 2020'
 
 ##### Why?
 * Increase of Maintainability
-* Decrease of Rgidity
+* Decrease of Rigidity
 
 ---
 
