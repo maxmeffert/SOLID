@@ -1,4 +1,75 @@
-/* @theme minimal */
+/* 
+ * @theme minimal
+ * @auto-scaling true
+ */
+/*
+
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: white;
+  color: black;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+  color: #008000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+  color: #00f;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+  color: #a31515;
+}
+
+.hljs-deletion,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+  color: #2b91af;
+}
+
+.hljs-doctag {
+  color: #808080;
+}
+
+.hljs-attr {
+  color: #f00;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #00b0e8;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
 header,
 footer {
   position: absolute;
@@ -84,11 +155,11 @@ section hr {
 
 section ul,
 section ol {
-  margin: 30px;
   text-align: left;
 }
 section ul li,
 section ol li {
+  margin: 27px;
   font-size: 1.5em;
 }
 section ul li li,
@@ -100,7 +171,6 @@ section ul {
 }
 
 section img {
-  border: 1px solid black;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -115,6 +185,7 @@ section a {
 section blockquote {
   border-left: 13px solid black;
   padding-left: 13px;
+  margin: 5px;
   color: rgba(0, 0, 0, 0.75);
 }
 
@@ -139,6 +210,16 @@ section pre {
   color: black;
   background-color: white;
   padding: 5px;
+}
+section pre code {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 100%;
+  padding: 0.5em;
+  font-size: 0.7em;
+}
+section pre code svg[data-marp-fitting=svg] {
+  max-height: calc(580px - 1em);
 }
 
 section::after {
