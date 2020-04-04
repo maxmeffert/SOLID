@@ -11,6 +11,12 @@ footer: 'Maximilian Meffert (c) 2020'
 
 ---
 
+<style scoped>
+li { 
+  margin: 0px;
+}
+</style>
+
 ### Dependency Inversion Principle
 
 ![bg right:40% 80%](./ASDPPP-Book-Cover.jpg)
