@@ -77,7 +77,7 @@ Also, reuse of higher-level features is impossible, because of _hard_ dependenci
 
 > _"(a.) High-level modules shoud not depend on low-level modules. Both should depend on abstractions."_ [Robert C. Martin]
 
-&#9746; **LampButton/MotorButton** (high-level) depends on **Lamp/Motor** (lovw-level). :-(
+&#9746; **LampButton/MotorButton** (high-level) depends on **Lamp/Motor** (low-level). :-(
 &#9746; No abstractions are present. :-(
 
 #### Constraint B
@@ -100,7 +100,7 @@ Also, reuse of higher-level features is impossible, because of _hard_ dependenci
 
 > _"(a.) High-level modules shoud not depend on low-level modules. Both should depend on abstractions."_ [Robert C. Martin]
 
-&#9746; **UI/Button** (high-level) depends on **Devices/IDevice** (lovw-level). :-(
+&#9746; **UI/Button** (high-level) depends on **Devices/IDevice** (low-level). :-(
 &#9745; **UI/Button** and **Devices/Lamp/Motor** depend on **Devices/IDevice** (abstraction). :-)
 
 #### Constraint B
@@ -138,7 +138,7 @@ The client of the interface does not "own" it. This still allows changes to orig
 
 > _"(a.) High-level modules shoud not depend on low-level modules. Both should depend on abstractions."_ [Robert C. Martin]
 
-&#9745; **UI/Button** (high-level) does not depend **Devices/Lamp/Motor** (lovw-level). :-)
+&#9745; **UI/Button** (high-level) does not depend **Devices/Lamp/Motor** (low-level). :-)
 &#9745; **UI/Button** and **Devices/Lamp/Motor** depend on **UI/ISwitchable** (abstraction). :-)
 
 #### Constraint B
