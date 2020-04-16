@@ -44,9 +44,9 @@ blockquote li {
 
 ![bg right:40% 80%](./OOSC-Book-Cover.jpg)
 
-> _"Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification._
-> * _A module will be said to be open if it is still available for extension. For example, it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs._
-> * _A module will be said to be closed if [it] is available for use by other modules. This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding)"_ 
+> **_"Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification._**
+> * **_A module will be said to be open if it is still available for extension. For example, it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs._**
+> * **_A module will be said to be closed if [it] is available for use by other modules. This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding)"_**
 > [Betrand Meyer]
 
 Bertrand Meyer. _Object-Oriented Software Construction, 2nd Edition._ Prentice-Hall 1997, ISBN 0-13-629155-4
@@ -87,7 +87,7 @@ Well, it's 13.
 
 $$ twice(add3,7) = add3(add3(7)) = (7 + 3) + 3 = 13$$
 
-Such systems $S$ can easily extended to $S'$ without having to modify existing functions.
+Such systems $S$ can be easily extended to $S'$ without having to modify existing functions.
 
 $$
 S =
@@ -152,6 +152,8 @@ main = print $ twice (+3) 7 -- 13
 Software rarely changes completely.
 
 Some code parts are more volatile than others, i.e. are likely to change more frequently.
+
+#### How to create Open/Closed Design?
 
 1. **Identify** volatile code
 2. **Separate** volatile code from non-volatile code
@@ -221,7 +223,7 @@ Systems can be extended by adding new _Strategies_ encapsulating.
 #### _Command Pattern_
 
 
-Such a system can be easily extended with a new _Commands_ and _Receivers_.
+Such a system can be easily extended by adding new _Commands_ and _Receivers_ encapsulating behavior.
 
 **Good Choice If** you have a set of _completely different_ action with possibly different _Receivers_ and you don't want a result returned to you
 
@@ -233,7 +235,7 @@ Such a system can be easily extended with a new _Commands_ and _Receivers_.
 
 ![bg right:50% 80%](Visitor.svg)
 
-Such a system can be easily extended with a new _Commands_ encapsulating behavior.
+Such a system can be easily extended by adding new _Visitors_ encapsulating behavior.
 
 **Good Choice If** you want to traverse an object graph in different ways for different purposes.
 
