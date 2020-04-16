@@ -140,7 +140,7 @@ main = print $ twice (+3) 7 -- 13
 
 * **Plugin Architectures**
   * **Operating Systems**
-  Can be extended by programs and apps without having to modify the operating itself
+  Can be extended by programs and apps without having to modify the operating system itself
   * **Integrated Development Environments (IDEs)**
   Visual Studio, VSCode, Rider, IntelliJ, etc. can be extended with a multitude of software languages and tools without having to modify the IDE program itself
   * ...
