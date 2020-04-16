@@ -162,22 +162,21 @@ Some code parts are more volatile than others, i.e. are likely to change more fr
 Changes are only changes if they occur, see Single Responsibility Principle.
 
 ---
-### How To Open/Closed: _Inheritence_
+### How To Open/Close
+#### _Inheritence_
 
 ```c#
 public class A 
 {
   public int U { get; set; }
-  public int V { get; set; }
   public void F()
   {
     ...
   }
 }
-
 public class B : A // other languages literally call this operator "extends" ;-)
 {
-  public int W { get; set; }
+  public int V { get; set; }
   public void G()
   {
     ...
@@ -192,7 +191,7 @@ We omit discussion on _overwriting_, but imagine the possibilities ;-)
 
 ![bg right:50% 80%](TemplateMethod.svg)
 
-### How To Open/Closed
+### How To Open/Close
 #### _Template Method Pattern_
 
 Systems can be extended by inherting the base class and implementing the _Template Methods_.
@@ -205,7 +204,7 @@ Systems can be extended by inherting the base class and implementing the _Templa
 
 ![bg right:50% 80%](Strategy.svg)
 
-### How To Open/Closed
+### How To Open/Close
 #### _Strategy Pattern_
 
 Systems can be extended by adding new _Strategies_ encapsulating.
@@ -218,7 +217,7 @@ Systems can be extended by adding new _Strategies_ encapsulating.
 
 ![bg right:50% 80%](Command.svg)
 
-### How To Open/Closed
+### How To Open/Close
 #### _Command Pattern_
 
 
@@ -229,7 +228,7 @@ Such a system can be easily extended with a new _Commands_ and _Receivers_.
 **Example** Writing to databases.
 
 ---
-### How To Open/Closed: 
+### How To Open/Close
 #### _Visitor Patern_
 
 ![bg right:50% 80%](Visitor.svg)
