@@ -60,19 +60,19 @@ Bertrand Meyer. _Object-Oriented Software Construction, 1st edition._ Prentice-H
 Software entities should be **both** open for extension **and** closed for modification
 
 * **Open for Extension** 
-  It is possible to extend behavior
+  It is possible to add or change behavior.
 * **Closed for Modification**
-  It is not necessary to modify source code
+  It is not necessary to modify source code.
 
 ---
 ### An Academic Example: Higher-Order Functions
 
 Lets say we have a function called $twice$ which applies a given function twice
 
-$$twice : (\mathbb{Z} \rightarrow \mathbb{Z}) \rightarrow \mathbb{Z}$$
+$$twice : (\mathbb{Z} \rightarrow \mathbb{Z}) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z}$$
 $$twice(f,v) := f(f(v))$$
 
-and function called $add3$ which adds 3
+and a function called $add3$ which adds 3
 
 $$add3 : \mathbb{Z} \rightarrow \mathbb{Z}$$
 $$add3(v) := v + 3$$
@@ -92,7 +92,7 @@ Such systems $S$ can be easily extended to $S'$ without having to modify existin
 $$
 S =
 \{ 
-twice : (\mathbb{Z} \rightarrow \mathbb{Z}) \rightarrow \mathbb{Z},
+twice : (\mathbb{Z} \rightarrow \mathbb{Z}) \rightarrow \mathbb{Z} \rightarrow \mathbb{Z},
 add3 : \mathbb{Z} \rightarrow \mathbb{Z}
 \}
 $$
@@ -161,7 +161,7 @@ Some code parts are more volatile than others, i.e. are likely to change more fr
 
 #### Word of Warning
 
-Changes are only changes if they occur, see Single Responsibility Principle.
+Changes are only changes if they occur, see _Single Responsibility Principle_.
 
 ---
 ### How To Open/Close
