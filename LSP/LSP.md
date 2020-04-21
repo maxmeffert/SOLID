@@ -106,7 +106,7 @@ class Circle : Ellipse
 {
     public override uint Width 
     { 
-        get => base.Height;
+        get => base.Width;
         set => { base.Width = value; base.Height = value; }
     }
     public override uint Height 
