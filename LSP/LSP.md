@@ -138,7 +138,7 @@ FitIntoRectangle(new Circle(), rectangle);
 
 A **mutable** ellipse class makes the promise that width and height can be adjusted **independently**.
 
-A derived circle breaks that promise by overwriting setters in order to keep geometric peroperties intact. 
+A derived circle breaks that promise by overwriting setters in order to keep geometric properties intact. 
 
 This doesn't work that well in the world of OO -.-
 
