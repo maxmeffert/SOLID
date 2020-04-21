@@ -84,7 +84,7 @@ FYI: _Subtype Polymorphism_ is the fancy name of Inheritence, a key technique fo
 
 ### Are Circles Ellipses?
 
-# Well Trained Software Engineer
+# Experienced Software Engineer
 
 ![bg right:40% 80%](./no.jpg)
 
