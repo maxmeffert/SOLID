@@ -24,7 +24,9 @@ li {
 > **_"Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it."_** [Robert C. Martin]
 
 ##### Why?
-* Increase the overall **Robustness** of the application through increase of determinism in behavior
+* Increase of overall **Robustness** 
+* Increase of Maintainability
+* Decrease of Rigidity
 
 ---
 
