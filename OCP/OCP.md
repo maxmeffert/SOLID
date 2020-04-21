@@ -231,7 +231,7 @@ Such a system can be easily extended by adding new _Commands_ and _Receivers_ en
 
 ---
 ### How To Open/Close
-#### _Visitor Patern_
+#### _Visitor Pattern_
 
 ![bg right:50% 80%](Visitor.svg)
 
